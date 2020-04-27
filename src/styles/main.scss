@@ -41,15 +41,18 @@ nav {
 }
 
 .jumbotron {
+  margin-top: 62px;
   background-image: url("https://cdn.pixabay.com/photo/2016/07/09/21/27/knight-1506882_1280.jpg");
-  background-size: cover;
-  height: 800px;
-  color:white;
+  background-size:contain;
+  background-position:center;
+  color: white;
+  text-align: center;
   font-family: $bigFonts;
-    h1 {
-      font-size: 95px;
-      margin-top: 125px;
-      -webkit-text-stroke: 1.5px $black;
+    .jumbotron-img {
+      font-size: 5vw;
+      margin-top: 50px;
+      -webkit-text-stroke: .7px $black;
+      text-shadow: 1px 1px 2px rgb(255, 255, 255), 1px 1px 2px rgb(255, 255, 255), 1px 1px 25px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
     }
 }
 
@@ -86,5 +89,16 @@ nav {
 }
 
 .cell-width {
-  width: 30%;
+  width: 20%;
+}
+
+.cell-heading {
+  width: 50%;
+}
+
+.cell-button {
+  width: 10%;
+}
+.nav-link, .dropright {
+text-align: right;
 }
