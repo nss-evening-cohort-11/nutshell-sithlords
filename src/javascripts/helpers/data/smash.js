@@ -68,13 +68,11 @@ const getEventStaff = (eventId) => new Promise((resolve, reject) => {
     .then((eventStaff) => {
       staffData.getStaff().then((allStaff) => {
         const selectedEventStaffMembers = [];
-        console.log('777777id we need -- all eventStaff for now', eventStaff);
         eventStaff.forEach((eventStaffMember) => {
           const foundEventStaffMember = allStaff.find((x) => x.id === eventStaffMember.staffId);
           foundEventStaffMember.parentEventStaffId = eventStaffMember.id;
           foundEventStaffMember.parentEventId = eventStaffMember.eventId;
           selectedEventStaffMembers.push(foundEventStaffMember);
-          console.log('found staff member with details', foundEventStaffMember);
         });
         resolve(selectedEventStaffMembers);
       });

@@ -98,7 +98,6 @@ const eventShowDetails = (singleEvent) => {
 
 const eventStaffDetails = (singleEvent) => {
   let domString = '';
-  console.error('single event data used for staff details', singleEvent);
   domString += '<table class="table-responsive table-dark">';
   domString += '<thead>';
   domString += '<tr>';
@@ -167,13 +166,10 @@ const removeEventFood = () => {
 const removeEventStaff = () => {
   const eventStaffId = $('.staffRow').data('parent');
   const eventId = $('.staffRow').data('container');
-  console.error('XXXXXXXXXevent staff id that we need to delete', eventStaffId);
-  console.error('YYYYYYYYevent id that needs to refresh', eventId);
   eventStaffData.getSingleEventStaff()
     .then(() => {
       eventStaffData.deleteEventStaff(eventStaffId)
         .then(() => {
-          console.error('deleted event staff', eventStaffId);
           // eslint-disable-next-line no-use-before-define
           viewSingleEvent(eventId);
         });
@@ -209,7 +205,6 @@ const viewSingleEvent = (eventId) => {
       domString += '<h4 class="eventSectionTitle">Shows Details</h4>';
       domString += eventShowDetails(singleEvent);
       domString += '</div>';
-
       domString += '<div id="eventAnimalsSection" class="details">';
       domString += '<h4 class="eventSectionTitle">Animal Encounter Details</h4>';
       domString += eventAnimalDetails(singleEvent);
