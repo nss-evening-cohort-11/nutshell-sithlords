@@ -22,7 +22,6 @@ const closeSingleEvent = () => {
 
 const eventFoodDetails = (singleEvent) => {
   let domString = '';
-  console.log('single event data used for food details', singleEvent);
   domString += '<table class="table-responsive table-dark">';
   domString += '<thead>';
   domString += '<tr>';
@@ -214,6 +213,7 @@ const removeEventStaff = () => {
 const viewSingleEvent = (eventId) => {
   smashData.getCompleteEvent(eventId)
     .then((singleEvent) => {
+      console.log('THIS IS A THE INFO', singleEvent);
       let domString = '';
       domString += '<div class="singleEventTitle">';
       domString += `<h2>${singleEvent.name}</h2>`;

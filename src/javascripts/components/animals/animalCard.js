@@ -4,7 +4,7 @@ import './animals.scss';
 
 const buildAnimalCard = (animal) => {
   let domString = '';
-  domString += '<div class="col-lg-4 col-md-6 mb-2">';
+  domString += '<div>';
   domString += `<div class="card" id="${animal.id}">`;
   domString += `<img src="${animal.imageUrl}" class="animalImg card-img-top" alt="image of "${animal.name}">`;
   domString += '<div class="card-body">';

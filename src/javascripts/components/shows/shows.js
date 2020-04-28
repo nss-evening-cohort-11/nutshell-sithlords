@@ -78,7 +78,7 @@ const buildAllShows = () => {
         domString += '<button class="btn btn-lg mb-2 new-show-btn" id="add-new-show-btn"><i class="fas fa-plus"></i> <span class="pl-1">Add New Show</span></button>';
       }
       domString += '</div>';
-      domString += '<div class="container-fluid d-flex flex-wrap col-md-9 col-sm-10">';
+      domString += '<div class="styling-columns card-columns justify-content-center">';
       shows.forEach((show) => {
         domString += showCards.buildShowCards(show);
       });

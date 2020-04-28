@@ -4,7 +4,7 @@ import './food.scss';
 
 const foodDataCardInfo = (food) => {
   let domString = '';
-  domString += '<div class="col-lg-4 col-md-6 mb-2">';
+  domString += '<div>';
   domString += `<div class="card" id="${food.id}">`;
   domString += `<img src="${food.imageUrl}" class="card-img-top" alt="...">`;
   domString += '<div class="card-body">';

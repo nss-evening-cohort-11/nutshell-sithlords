@@ -4,7 +4,7 @@ import './souvenirsCards.scss';
 
 const buildSouvenirsCards = (souvenir) => {
   let domString = '';
-  domString += '<div class="mb-2 souvenir-card">';
+  domString += '<div class="souvenir-card">';
   domString += `<div class="card" id="${souvenir.id}">`;
   domString += `<img src="${souvenir.imageUrl}" class="card-img-top img-fluid souvenirs-image">`;
   domString += '<div class="card-body">';

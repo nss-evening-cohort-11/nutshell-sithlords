@@ -5,7 +5,7 @@ import './showCards.scss';
 
 const buildShowCards = (show) => {
   let domString = '';
-  domString += '<div class="col-lg-4 col-md-6 mb-2">';
+  domString += '<div>';
   domString += `<div class="card" id="${show.id}">`;
   domString += `<img src="${show.imageUrl}" class="card-img-top img-fluid show-images" alt="...">`;
   domString += '<div class="card-body">';
