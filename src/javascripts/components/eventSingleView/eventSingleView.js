@@ -1,3 +1,4 @@
+
 import firebase from 'firebase/app';
 /* eslint-disable no-use-before-define */
 import eventFoodData from '../../helpers/data/eventFoodData';
@@ -22,8 +23,7 @@ const closeSingleEvent = () => {
 
 const eventFoodDetails = (singleEvent) => {
   let domString = '';
-  console.log('single event data used for food details', singleEvent);
-  domString += '<table class="table-responsive table-dark table-width">';
+  domString += '<table class="table-responsive table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Food Type</th>';
@@ -34,7 +34,7 @@ const eventFoodDetails = (singleEvent) => {
   domString += '<tbody>';
   singleEvent.food.forEach((foodItem) => {
     domString += `<tr class="eventFoodItem foodRow" data-id="${foodItem.id}" data-parent="${foodItem.parentEventFoodId}" data-container="${foodItem.parentEventId}">`;
-    domString += `<th scope="row" class="cell-width">${foodItem.type}</th>`;
+    domString += `<th scope="row" class="cell-heading">${foodItem.type}</th>`;
     domString += `<td class="cell-width">$${foodItem.price}</td>`;
     domString += `<td class="cell-width">${foodItem.parentQuantity}</td>`;
     const user = firebase.auth().currentUser;
@@ -51,7 +51,7 @@ const eventFoodDetails = (singleEvent) => {
 
 const eventSouvenirDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Souvenir Type</th>';
@@ -62,7 +62,7 @@ const eventSouvenirDetails = (singleEvent) => {
   domString += '<tbody>';
   singleEvent.souvenirs.forEach((souvItem) => {
     domString += '<tr>';
-    domString += `<th scope="row" class="cell-width">${souvItem.type}</th>`;
+    domString += `<th scope="row" class="cell-heading">${souvItem.type}</th>`;
     domString += `<td class="cell-width">$${souvItem.price}</td>`;
     domString += `<td class="cell-width">${souvItem.isAvailable}</td>`;
     const user = firebase.auth().currentUser;
@@ -80,7 +80,7 @@ const eventSouvenirDetails = (singleEvent) => {
 
 const eventShowDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Show Name</th>';
@@ -92,7 +92,7 @@ const eventShowDetails = (singleEvent) => {
   singleEvent.shows.forEach((showItem) => {
     domString += `<tr class="eventShowItem showRow" data-id="${showItem.id}" data-parent="${showItem.parentEventShowId}" data-container="${showItem.parentEventId}">`;
     domString += '<tr>';
-    domString += `<th scope="row" class="cell-width">${showItem.name}</th>`;
+    domString += `<th scope="row" class="cell-heading">${showItem.name}</th>`;
     domString += `<td class="cell-width">$${showItem.cost}</td>`;
     domString += `<td class="cell-width">${showItem.quantity}</td>`;
     const user = firebase.auth().currentUser;
@@ -109,7 +109,7 @@ const eventShowDetails = (singleEvent) => {
 
 const eventStaffDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Staff Member</th>';
@@ -120,7 +120,7 @@ const eventStaffDetails = (singleEvent) => {
   domString += '<tbody>';
   singleEvent.staff.forEach((staffMember) => {
     domString += `<tr class="eventStaffMember staffRow" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    domString += `<th scope="row" class="cell-width">${staffMember.name}</th>`;
+    domString += `<th scope="row" class="cell-heading">${staffMember.name}</th>`;
     domString += `<td class="cell-width">$${staffMember.pay}/hr.</td>`;
     domString += `<td class="cell-width">${staffMember.characterType}</td>`;
     const user = firebase.auth().currentUser;
@@ -137,7 +137,7 @@ const eventStaffDetails = (singleEvent) => {
 
 const eventAnimalDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Type</th>';
@@ -148,7 +148,7 @@ const eventAnimalDetails = (singleEvent) => {
   domString += '<tbody>';
   singleEvent.animals.forEach((animalItem) => {
     domString += '<tr>';
-    domString += `<th scope="row" class="cell-width">${animalItem.type}</th>`;
+    domString += `<th scope="row" class="cell-heading">${animalItem.type}</th>`;
     domString += `<td class="cell-width">$${animalItem.cost}</td>`;
     domString += `<td class="cell-width">${animalItem.isAvailable}</td>`;
     const user = firebase.auth().currentUser;
@@ -214,6 +214,7 @@ const removeEventStaff = () => {
 const viewSingleEvent = (eventId) => {
   smashData.getCompleteEvent(eventId)
     .then((singleEvent) => {
+      console.log('THIS IS A THE INFO', singleEvent);
       let domString = '';
       domString += '<div class="singleEventTitle">';
       domString += `<h2>${singleEvent.name}</h2>`;
@@ -222,24 +223,24 @@ const viewSingleEvent = (eventId) => {
       domString += `<h5>${singleEvent.timeStart} - ${singleEvent.timeEnd}</h5>`;
       domString += '<button id="closeSingleEvent" class="btn btn-lg closeEventBtn"><i class="fas fa-times"></i> Close event details</button>';
       domString += '</div>';
-      domString += '<div id="eventDetails" class="container-fluid d-flex flex-wrap">';
-      domString += '<div id="eventFoodSection" class="quad col-md-4 col-sm-12">';
+      domString += '<div id="eventDetails" class="d-flex flex-wrap m-5">';
+      domString += '<div id="eventFoodSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Food Details</h4>';
       domString += eventFoodDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventSouvenirsSection" class="quad col-md-4 col-sm-12">';
+      domString += '<div id="eventSouvenirsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Souvenirs Details</h4>';
       domString += eventSouvenirDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventStaffSection" class="quad col-md-4 col-sm-12">';
+      domString += '<div id="eventStaffSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Staff Details</h4>';
       domString += eventStaffDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventShowsSection" class="quad col-md-4 col-sm-12">';
+      domString += '<div id="eventShowsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Shows Details</h4>';
       domString += eventShowDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventAnimalsSection" class="quad col-md-4 col-sm-12">';
+      domString += '<div id="eventAnimalsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Animal Encounter Details</h4>';
       domString += eventAnimalDetails(singleEvent);
       domString += '</div>';
@@ -254,6 +255,7 @@ const viewSingleEvent = (eventId) => {
       $('#staff-collection').addClass('hide');
       $('#shows').addClass('hide');
       $('#events').addClass('hide');
+      $('#animals').addClass('hide');
       $('#single-view-event').removeClass('hide');
     })
     .catch((error) => console.error('problem with single event', error));
