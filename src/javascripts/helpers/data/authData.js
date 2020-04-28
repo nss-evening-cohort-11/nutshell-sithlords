@@ -7,7 +7,6 @@ import shows from '../../components/shows/shows';
 import staff from '../../components/staff/staff';
 import animals from '../../components/animals/animals';
 import eventsContainer from '../../components/eventsContainer/eventsContainer';
-import clickEvents from '../../components/eventSingleView/eventSingleView';
 
 const loginButton = $('#loginButton');
 const logoutButton = $('#logoutButton');
@@ -30,7 +29,6 @@ const checkLoginStatus = () => {
       eventsDiv.addClass('hide');
       singleViewDiv.addClass('hide');
     }
-    clickEvents.singleEventClickEvents();
     food.foodEvents();
     food.buildAllFoods();
     animals.animalEvents();

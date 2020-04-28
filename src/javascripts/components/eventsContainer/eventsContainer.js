@@ -80,12 +80,13 @@ const buildAllEvents = () => {
       domString += '<h3>Fun celebrations for the whole family!</h3>';
       domString += '<button class="btn btn-lg addEventBtn" id="addEventBtn"><i class="fas fa-plus"></i> Add a New Event</button>';
       domString += '</div>';
-      domString += '<div class="styling-columns card-columns justify-content-center">';
+      domString += '<div class="container-fluid d-flex flex-wrap col-md-9 col-sm-10">';
       events.forEach((event) => {
         domString += eventCard.buildEventCard(event);
       });
       domString += '</div>';
       utils.printToDom('events', domString);
+      $('body').on('click', '#viewEventBtn', eventSingleView.viewSingleEventCall);
     })
     .catch((error) => console.error('build all events has failed', error));
 };
@@ -96,7 +97,6 @@ const eventActions = () => {
   $('body').on('click', '#editEventBtn', editNewEvent);
   $('body').on('click', '#button-save-event', makeNewEvent);
   $('body').on('click', '#addEventBtn', addEventModal.showEventModalForm);
-  $('body').on('click', '#viewEventBtn', eventSingleView.viewSingleEventCall);
 };
 
 export default { buildAllEvents, eventActions, editNewEvent };
