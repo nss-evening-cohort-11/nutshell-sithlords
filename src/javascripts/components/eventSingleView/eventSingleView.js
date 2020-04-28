@@ -45,7 +45,7 @@ const eventFoodDetails = (singleEvent) => {
 
 const eventSouvenirDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Souvenir Type</th>';
@@ -71,7 +71,7 @@ const eventSouvenirDetails = (singleEvent) => {
 
 const eventShowDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Show Name</th>';
@@ -98,7 +98,7 @@ const eventShowDetails = (singleEvent) => {
 
 const eventStaffDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Staff Member</th>';
@@ -123,7 +123,7 @@ const eventStaffDetails = (singleEvent) => {
 
 const eventAnimalDetails = (singleEvent) => {
   let domString = '';
-  domString += '<table class="table-responsive table-dark">';
+  domString += '<table class="table-dark">';
   domString += '<thead>';
   domString += '<tr>';
   domString += '<th scope="col">Type</th>';
@@ -188,20 +188,20 @@ const viewSingleEvent = (eventId) => {
       domString += `<h5>${singleEvent.timeStart} - ${singleEvent.timeEnd}</h5>`;
       domString += '<button id="closeSingleEvent" class="btn btn-lg closeEventBtn"><i class="fas fa-times"></i> Close event details</button>';
       domString += '</div>';
-      domString += '<div id="eventDetails" class="d-flex flex-wrap">';
-      domString += '<div id="eventFoodSection" class="details col-md-4">';
+      domString += '<div id="eventDetails" class="d-flex flex-wrap m-5">';
+      domString += '<div id="eventFoodSection" class="details">';
       domString += '<h4 class="eventSectionTitle">Food Details</h4>';
       domString += eventFoodDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventSouvenirsSection" class="details col-md-4">';
+      domString += '<div id="eventSouvenirsSection" class="details">';
       domString += '<h4 class="eventSectionTitle">Souvenirs Details</h4>';
       domString += eventSouvenirDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventStaffSection" class="details col-md-4">';
+      domString += '<div id="eventStaffSection" class="details">';
       domString += '<h4 class="eventSectionTitle">Staff Details</h4>';
       domString += eventStaffDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventShowsSection" class="details col-md-4">';
+      domString += '<div id="eventShowsSection" class="details">';
       domString += '<h4 class="eventSectionTitle">Shows Details</h4>';
       domString += eventShowDetails(singleEvent);
       domString += '</div>';

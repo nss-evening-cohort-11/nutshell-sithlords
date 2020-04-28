@@ -4,7 +4,7 @@ import './animals.scss';
 
 const buildAnimalCard = (animal) => {
   let domString = '';
-  domString += '<div class="col-md-4 col-sm-12 mb-2">';
+  domString += '<div class="col-lg-4  col-md-6 mb-2">';
   domString += `<div class="card" id="${animal.id}">`;
   domString += `<img src="${animal.imageUrl}" class="animalImg card-img-top" alt="image of "${animal.name}">`;
   domString += '<div class="card-body">';
@@ -17,11 +17,11 @@ const buildAnimalCard = (animal) => {
   } else {
     domString += '<p class="card-text">Animal is on vacation, please check back after a well-deserved vacation.</p>';
   }
-  domString += '<div class="d-flex justify-content-around">';
+  domString += '<div class="d-flex justify-content-center">';
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editAnimalBtn" class="col-5 btn btn-default editAnimalBtn"><i class="fas fa-feather-alt"></i> Edit</<button>';
-    domString += '<button id="deleteAnimalBtn" class="col-5 btn btn-default deleteAnimalBtn"><i class="far fa-trash-alt"></i> Delete</button>';
+    domString += '<button id="editAnimalBtn" class="btn btn-default editAnimalBtn"><i class="fas fa-feather-alt"></i></<button>';
+    domString += '<button id="deleteAnimalBtn" class="btn btn-default deleteAnimalBtn"><i class="far fa-trash-alt"></i></button>';
   }
   domString += '</div>';
   domString += '</div>';
