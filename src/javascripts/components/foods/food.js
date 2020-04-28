@@ -16,7 +16,6 @@ const editFoodItem = (e) => {
     description: $('#edit-foodDescription').val(),
     imageUrl: $('#edit-foodImageUrl').val(),
     price: $('#edit-foodPrice').val() * 1,
-    location: $('#edit-foodLocation').val(),
     isAvailable: $('#edit-availabilityOfFood').val(),
     uid: utils.getMyUid(),
   };
@@ -39,7 +38,6 @@ const saveNewFoodItem = (e) => {
     description: $('#foodDescription').val(),
     imageUrl: $('#foodImageUrl').val(),
     price: $('#foodPrice').val() * 1,
-    location: $('#foodLocation').val(),
     isAvailable: $('#availabilityOfFood').val(),
     uid: utils.getMyUid(),
   };

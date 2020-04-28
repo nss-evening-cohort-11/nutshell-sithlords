@@ -11,7 +11,6 @@ const foodDataCardInfo = (food) => {
   domString += `<h5 class="card-title text-center">${food.type}</h5>`;
   domString += `<p class="card-text">${food.description}</p>`;
   domString += `<p class="card-text">Price: $${food.price}</p>`;
-  domString += `<p class="card-text">Location: ${food.location}</p>`;
   if (`${food.isAvailable}` === 'Available') {
     domString += '<p class="card-text">Now available!</p>';
   } else {

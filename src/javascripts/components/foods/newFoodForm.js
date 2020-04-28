@@ -22,15 +22,6 @@ const newFoodForm = () => {
   domString += '<input type="number" class="form-control" id="foodPrice" placeholder="Price">';
   domString += '</div>';
   domString += '<div class="form-group">';
-  domString += '<label for="foodLocation">Locations Of Food:</label>';
-  domString += '<select id="foodLocation" class="form-control" placeholder="Where?">';
-  domString += '<option value="">Select your option</option>';
-  domString += '<option value="Edinson Tudor Festival">Edinson Tudor Festival</option>';
-  domString += '<option value="North Illinois Pleasure Faire">North Illinois Pleasure Faire</option>';
-  domString += '<option value="Hopscote-by-Sea Faire">Hopscote-by-Sea Faire</option>';
-  domString += '</select>';
-  domString += '</div>';
-  domString += '<div class="form-group">';
   domString += '<label for="availabilityOfFood">Availability Of Food:</label>';
   domString += '<select id="availabilityOfFood" class="form-control" placeholder="Is it available today?">';
   domString += '<option value="">Select your option</option>';

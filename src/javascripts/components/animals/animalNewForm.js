@@ -34,8 +34,8 @@ const showAddAnimalModalForm = () => {
   domString += '</select>';
   domString += '</form>';
 
-  $('#newAnimalSubmit').removeClass('hide');
-  $('#editAnimalSubmit').addClass('hide');
+  $('#newAnimalSubmit').addClass('hide');
+  $('#editAnimalSubmit').removeClass('hide');
   utils.printToDom('modalAnimalForm', domString);
 };
 

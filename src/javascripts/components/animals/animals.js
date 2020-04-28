@@ -3,8 +3,37 @@ import animalData from '../../helpers/data/animalData';
 
 import animalCard from './animalCard';
 import animalNewForm from './animalNewForm';
+import animalEdit from './animalEditForm.js/animalEditForm';
 
 import utils from '../../helpers/utils';
+
+// const editNewAnimal = (e) => {
+//   e.preventDefault();
+//   const animalId = e.target.closest('.card').id;
+//   $('#animalModal').modal('show');
+//   animalEdit.editAnimalForm(animalId);
+// };
+
+const updateAnimalCard = (e) => {
+  e.preventDefault();
+  const animalId = $('.editAnimalForm').data('id');
+  const editAnimal = {
+    name: $('#edit-animalName').val(),
+    type: $('#edit-animalType').val(),
+    description: $('#edit-animalDescription').val(),
+    imageUrl: $('#edit-animalImage').val(),
+    cost: $('#edit-animalCost').val() * 1,
+    isAvailable: $('#edit-animalAvailability').val(),
+    uid: utils.getMyUid(),
+  };
+  animalData.updateAnimals(animalId, editAnimal)
+    .then(() => {
+      $('#animalModal').modal('hide');
+      // eslint-disable-next-line no-use-before-define
+      buildAllAnimals();
+    })
+    .catch((err) => console.error('update failed', err));
+};
 
 const removeAnimalCard = (e) => {
   e.preventDefault();
@@ -62,8 +91,10 @@ const buildAllAnimals = () => {
 
 const animalEvents = () => {
   $('body').on('click', '#deleteAnimalBtn', removeAnimalCard);
+  $('body').on('click', '#editAnimalBtn', animalEdit.editAnimalForm);
   $('body').on('click', '#addAnimalBtn', animalNewForm.showAddAnimalModalForm);
   $('body').on('click', '#newAnimalSubmit', makeNewAnimal);
+  $('body').on('click', '#editAnimalSubmit', updateAnimalCard);
 };
 
 export default { buildAllAnimals, animalEvents };

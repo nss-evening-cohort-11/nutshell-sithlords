@@ -16,13 +16,12 @@ const getEventFood = (eventId) => new Promise((resolve, reject) => {
     .then((eventFoods) => {
       foodData.getFoods().then((allFoods) => {
         const selectedEventFoodItems = [];
-        console.log('444444444id we need -- all eventfoods for now', eventFoods);
         eventFoods.forEach((eventFoodItem) => {
           const foundEventFoodItem = allFoods.find((x) => x.id === eventFoodItem.foodId);
           foundEventFoodItem.parentEventFoodId = eventFoodItem.id;
+          foundEventFoodItem.parentQuantity = eventFoodItem.quantity;
           foundEventFoodItem.parentEventId = eventFoodItem.eventId;
           selectedEventFoodItems.push(foundEventFoodItem);
-          console.log('found food item with details', foundEventFoodItem);
         });
         resolve(selectedEventFoodItems);
       });
@@ -55,6 +54,8 @@ const getEventShow = (eventId) => new Promise((resolve, reject) => {
         const selectedEventShowItems = [];
         eventShows.forEach((eventShowItem) => {
           const foundEventShowItem = allShows.find((x) => x.id === eventShowItem.showId);
+          foundEventShowItem.parentEventShowId = eventShowItem.id;
+          foundEventShowItem.parentEventId = eventShowItem.eventId;
           selectedEventShowItems.push(foundEventShowItem);
         });
         resolve(selectedEventShowItems);

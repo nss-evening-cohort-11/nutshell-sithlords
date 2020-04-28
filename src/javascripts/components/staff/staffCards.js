@@ -10,7 +10,6 @@ const buildStaffCards = (staff) => {
   domString += `<h5 class="card-title">${staff.name}</h5>`;
   domString += `<p class="card-text">Character Type: ${staff.characterType}</p>`;
   domString += `<p class="card-text">Character Name: ${staff.characterName}</p>`;
-  domString += `<p class="card-text">Location: ${staff.location}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
     domString += '<button id="editStaffBtn" class="col-5 btn editStaffBtn"><i class="fas fa-feather-alt"></i> Edit</<button>';

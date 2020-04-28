@@ -2,17 +2,15 @@
   "show1": {
     "name": "By Lance or By Sea",
     "stage": "Jousting Field",
-    "location": "Edinson Tudor Festival",
     "time": "3:45",
-    "cost": 300,
-    "quantity": 3,
+    "cost": "300",
+    "quantity": "3",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/07/09/21/27/knight-1506878_1280.jpg",
     "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
   },
   "show2": {
     "name": "Mad Maddox Magic Show",
     "stage": "Stage 4",
-    "location": "Edinson Tudor Festival",
     "time": "12:00",
     "cost": "250",
     "quantity": "3",
@@ -22,7 +20,6 @@
   "show3": {
     "name": "Triple Treat Trick Show",
     "stage": "Stage 1",
-    "location": "Edinson Tudor Festival",
     "time": "1:30",
     "cost": "350",
     "quantity": "3",
@@ -32,7 +29,6 @@
   "show4": {
     "name": "Joust for Crown",
     "stage": "Jousting Field",
-    "location": "Edinson Tudor Festival",
     "time": "11:00",
     "cost": "500",
     "quantity": "3",
@@ -42,7 +38,6 @@
   "show5": {
     "name": "The Lucid Dream Interactive Opera",
     "stage": "Stage 2",
-    "location": "Edinson Tudor Festival",
     "time": "4:00",
     "cost": "450",
     "quantity": "3",
@@ -50,9 +45,8 @@
     "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
   },
   "show6": {
-    "name": "By Lance or By Sea",
+    "name": "Children Knighting Ceremony",
     "stage": "Jousting Field",
-    "location": "Hopscote-by-Sea Faire",
     "time": "3:45",
     "cost": "300",
     "quantity": "3",
@@ -60,9 +54,8 @@
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "show7": {
-    "name": "Mad Maddox Magic Show",
+    "name": "Robin Hood & Maid Marian",
     "stage": "Stage 4",
-    "location": "Hopscote-by-Sea Faire",
     "time": "12:00",
     "cost": "250",
     "quantity": "3",
@@ -70,9 +63,8 @@
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "show8": {
-    "name": "Triple Treat Trick Show",
+    "name": "Axel Sot",
     "stage": "Stage 1",
-    "location": "Hopscote-by-Sea Faire",
     "time": "1:30",
     "cost": "350",
     "quantity": "3",
@@ -80,9 +72,8 @@
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "show9": {
-    "name": "Joust for Crown",
+    "name": "Davinci Brothers Comedy Opera",
     "stage": "Jousting Field",
-    "location": "Hopscote-by-Sea Faire",
     "time": "11:00",
     "cost": "500",
     "quantity": "3",
@@ -90,9 +81,8 @@
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "show10": {
-    "name": "The Lucid Dream Interactive Opera",
+    "name": "Royal Improv Comedy",
     "stage": "Stage 2",
-    "location": "Hopscote-by-Sea Faire",
     "time": "4:00",
     "cost": "450",
     "quantity": "3",
@@ -100,9 +90,8 @@
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "show11": {
-    "name": "By Lance or By Sea",
+    "name": "Buckle & Smash",
     "stage": "Jousting Field",
-    "location": "North Illinois Pleasure Faire",
     "time": "3:45",
     "cost": "300",
     "quantity": "3",
@@ -110,9 +99,8 @@
     "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "show12": {
-    "name": "Mad Maddox Magic Show",
+    "name": "Empty Hats",
     "stage": "Stage 4",
-    "location": "North Illinois Pleasure Faire",
     "time": "12:00",
     "cost": "250",
     "quantity": "3",
@@ -120,9 +108,8 @@
     "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "show13": {
-    "name": "Triple Treat Trick Show",
+    "name": "Tea with Lady Ettie",
     "stage": "Stage 1",
-    "location": "North Illinois Pleasure Faire",
     "time": "1:30",
     "cost": "350",
     "quantity": "3",
@@ -130,9 +117,8 @@
     "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "show14": {
-    "name": "Joust for Crown",
+    "name": "The Roses",
     "stage": "Jousting Field",
-    "location": "North Illinois Pleasure Faire",
     "time": "11:00",
     "cost": "500",
     "quantity": "3",
@@ -140,9 +126,8 @@
     "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "show15": {
-    "name": "The Lucid Dream Interactive Opera",
+    "name": "Rafferty the Piper",
     "stage": "Stage 2",
-    "location": "North Illinois Pleasure Faire",
     "time": "4:00",
     "cost": "450",
     "quantity": "3",
@@ -150,9 +135,8 @@
     "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "show16": {
-    "name": "By Lance or By Sea",
+    "name": "Royal Joust",
     "stage": "Jousting Field",
-    "location": "Tennesee Arrington",
     "time": "3:45",
     "cost": "300",
     "quantity": "3",
@@ -160,9 +144,8 @@
     "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "show17": {
-    "name": "Mad Maddox Magic Show",
+    "name": "Paulo Garbanzo",
     "stage": "Stage 4",
-    "location": "Tennesee Arrington",
     "time": "12:00",
     "cost": "250",
     "quantity": "3",
@@ -170,9 +153,8 @@
     "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "show18": {
-    "name": "Triple Treat Trick Show",
+    "name": "Daniel Duked Danger",
     "stage": "Stage 1",
-    "location": "Tennesee Arrington",
     "time": "1:30",
     "cost": "350",
     "quantity": "3",
@@ -180,9 +162,8 @@
     "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "show19": {
-    "name": "Joust for Crown",
+    "name": "The Royal Rumble",
     "stage": "Jousting Field",
-    "location": "Tennesee Arrington",
     "time": "11:00",
     "cost": "500",
     "quantity": "3",
@@ -190,9 +171,8 @@
     "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "show20": {
-    "name": "The Lucid Dream Interactive Opera",
+    "name": "Knight Wings Birds of Prey",
     "stage": "Stage 2",
-    "location": "Tennesee Arrington",
     "time": "4:00",
     "cost": 450,
     "quantity": 3,
@@ -200,9 +180,8 @@
     "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "show21": {
-    "name": "By Lance or By Sea",
+    "name": "MooNile the Magnificent",
     "stage": "Jousting Field",
-    "location": "Tennesee Arrington",
     "time": "3:45",
     "cost": 300,
     "quantity": 3,
@@ -210,9 +189,8 @@
     "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "show22": {
-    "name": "Mad Maddox Magic Show",
+    "name": "Ramblin Rhythms",
     "stage": "Stage 4",
-    "location": "Tennesee Arrington",
     "time": "12:00",
     "cost": 250,
     "quantity": 3,
@@ -220,9 +198,8 @@
     "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "show23": {
-    "name": "Triple Treat Trick Show",
+    "name": "Wenches A Wailing",
     "stage": "Stage 1",
-    "location": "Tennesee Arrington",
     "time": "1:30",
     "cost": 350,
     "quantity": 3,
@@ -230,9 +207,8 @@
     "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "show24": {
-    "name": "Joust for Crown",
+    "name": "Cristophe the Insultor",
     "stage": "Jousting Field",
-    "location": "Tennesee Arrington",
     "time": "11:00",
     "cost": 500,
     "quantity": 3,
@@ -240,9 +216,8 @@
     "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "show25": {
-    "name": "The Lucid Dream Interactive Opera",
+    "name": "Knotty Nauticals",
     "stage": "Stage 2",
-    "location": "Tennesee Arrington",
     "time": "4:00",
     "cost": 450,
     "quantity": 3,

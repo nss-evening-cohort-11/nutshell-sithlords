@@ -2,7 +2,6 @@
   "staff1": {
     "name": "May Jones",
     "pay": 40,
-    "location": "Edinson Tudor Festival",
     "characterType": "Noble",
     "characterName": "Lady Isabetta Ricci",
     "imageUrl": "https://66.media.tumblr.com/9a62a68aeddc2ad51ff01e392d92dfa7/tumblr_inline_mubfvd88eW1r1cctj.jpg",
@@ -11,7 +10,6 @@
   "staff2": {
     "name": "Elias Bouchard",
     "pay": 30,
-    "location": "Edinson Tudor Festival",
     "characterType": "Jester",
     "characterName": "Benvenuto Bianchi",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/10/04/11/43/jester-1714117_1280.jpg",
@@ -20,7 +18,6 @@
   "staff3": {
     "name": "Daisy Tonner",
     "pay": 25,
-    "location": "Edinson Tudor Festival",
     "characterType": "Peasant",
     "characterName": "Minerva Rossi",
     "imageUrl": "https://assets.nydailynews.com/polopoly_fs/1.1937207.1410490630!/img/httpImage/image.jpg_gen/derivatives/article_750/inthenow12f-9-web.jpg",
@@ -29,7 +26,6 @@
   "staff4": {
     "name": "Martin Blackwood",
     "pay": 30,
-    "location": "Edinson Tudor Festival",
     "characterType": "Peasant",
     "characterName": "Aldo Bianchi",
     "imageUrl": "https://cdn.pixabay.com/photo/2015/09/14/21/06/portrait-940115_1280.jpg",
@@ -38,7 +34,6 @@
   "staff5": {
     "name": "Jonathon Sims",
     "pay": 35,
-    "location": "Edinson Tudor Festival",
     "characterType": "Knight",
     "characterName": "Alessio Rossi",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/07/09/21/28/knight-1506896_1280.jpg",
@@ -47,7 +42,6 @@
   "staff6": {
     "name": "Amalia England",
     "pay": 40,
-    "location": "Hopscote-by-Sea Faire",
     "characterType": "Noble",
     "characterName": "Princess Amalia",
     "imageUrl": "https://armstreet.com/pictures/blog/full/in-progress-the-brightest-photos-of-our-collaboration-with-savra-9.jpg",
@@ -56,7 +50,6 @@
   "staff7": {
     "name": "Archie Randolph",
     "pay": 30,
-    "location": "Hopscote-by-Sea Faire",
     "characterType": "Jester",
     "characterName": "Montague Faulconbridge",
     "imageUrl": "https://i.pinimg.com/originals/49/3d/c1/493dc1eefedeb0d1300363ba4adb95d3.jpg",
@@ -65,7 +58,6 @@
   "staff8": {
     "name": "Tabitha Woodcock",
     "pay": 25,
-    "location": "Hopscote-by-Sea Faire",
     "characterType": "Peasant",
     "characterName": "Gabriela Patroclus",
     "imageUrl": "https://usakilts.com/blog/wp-content/uploads/Renn_Fair/renn_Beer.jpg",
@@ -74,7 +66,6 @@
   "staff9": {
     "name": "Aaron Nicholas",
     "pay": 30,
-    "location": "Hopscote-by-Sea Faire",
     "characterType": "Peasant",
     "characterName": "Pablo Macbeth",
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRL_cBy0FppzGBUOYKdJZ9NFjJ89hCeREg5H2ZaG5BatEWUpSmC&usqp=CAU",
@@ -83,7 +74,6 @@
   "staff10": {
     "name": "Baran Shaw",
     "pay": 35,
-    "location": "Hopscote-by-Sea Faire",
     "characterType": "Knight",
     "characterName": "Paul Hansen",
     "imageUrl": "https://i.pinimg.com/originals/7e/7d/6c/7e7d6c3f54d81b1b9ab778879ac67170.png",
@@ -92,15 +82,14 @@
   "staff11": {
     "name": "Kaisha Brook",
     "pay": 40,
-    "location": "North Illinois Pleasure Faire",
     "characterType": "Noble",
     "characterName": "Lady Katherine Lazarus",
-    "imageUrl": "https://sep.yimg.com/ay/yhst-55945181203785/capes-and-cloaks-keep-dry-stay-warm-look-great-2.jpg"
+    "imageUrl": "https://sep.yimg.com/ay/yhst-55945181203785/capes-and-cloaks-keep-dry-stay-warm-look-great-2.jpg",
+    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "staff12": {
     "name": "Romeo Lovell",
     "pay": 30,
-    "location": "North Illinois Pleasure Faire",
     "characterType": "Jester",
     "characterName": "Wesley Valentine",
     "imageUrl": "https://alexthejester.com/wp-content/uploads/2015/06/renaissance-era-entertainment.jpeg",
@@ -109,7 +98,6 @@
   "staff13": {
     "name": "Daniella Dickens",
     "pay": 25,
-    "location": "North Illinois Pleasure Faire",
     "characterType": "Peasant",
     "characterName": "Alexia Beasley",
     "imageUrl": "https://sep.yimg.com/ay/yhst-55945181203785/medieval-peasant-costume-a-simple-touch-that-means-so-much-2.jpg",
@@ -118,7 +106,6 @@
   "staff14": {
     "name": "Justin Gutierrez",
     "pay": 30,
-    "location": "North Illinois Pleasure Faire",
     "characterType": "Peasant",
     "characterName": "Roman Bass",
     "imageUrl": "https://nebula.wsimg.com/d79fb5518d3ddaa0b0148af983ac7942?AccessKeyId=AEC6FC5E2E858FD7714E&disposition=0&alloworigin=1",
@@ -127,7 +114,6 @@
   "staff15": {
     "name": "Joseff Mcleod",
     "pay": 35,
-    "location": "North Illinois Pleasure Faire",
     "characterType": "Knight",
     "characterName": "Sean Stewart",
     "imageUrl": "https://storage.needpix.com/rsynced_images/knight-940093_1280.jpg",
@@ -136,7 +122,6 @@
   "staff16": {
     "name": "Dania Downs",
     "pay": 40,
-    "location": "Tennesee Arrington",
     "characterType": "Noble",
     "characterName": "Lady Virgilia Eros",
     "imageUrl": "https://renfair.com/bristol/wp-content/uploads/sites/6/2016/04/Fairy-throne-Queen.jpg",
@@ -145,7 +130,6 @@
   "staff17": {
     "name": "Mehak Booker",
     "pay": 30,
-    "location": "Tennesee Arrington",
     "characterType": "Jester",
     "characterName": "Byron Chambers",
     "imageUrl": "https://live.staticflickr.com/3278/2695487442_9cbacbc4b0_b.jpg",
@@ -154,7 +138,6 @@
   "staff18": {
     "name": "Sofija Cresswell",
     "pay": 25,
-    "location": "Tennesee Arrington",
     "characterType": "Peasant",
     "characterName": "Daisy Bright",
     "imageUrl": "https://i.pinimg.com/originals/e5/52/89/e55289bba8cd9a10cc4ed21805971449.jpg",
@@ -163,7 +146,6 @@
   "staff19": {
     "name": "Myron Howe",
     "pay": 30,
-    "location": "Tennesee Arrington",
     "characterType": "Peasant",
     "characterName": "Alfred Gray",
     "imageUrl": "https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2015/10/carolina-renaissance-fesival-food.jpg",
@@ -172,7 +154,6 @@
   "staff20": {
     "name": "Abel Hodge",
     "pay": 35,
-    "location": "Tennesee Arrington",
     "characterType": "Knight",
     "characterName": "Cole Thompson",
     "imageUrl": "https://arizona.renfestinfo.com/wp-content/uploads/2016/06/ifl-joust-2-1.jpg",
@@ -181,7 +162,6 @@
   "staff21": {
     "name": "Bella Hayden",
     "pay": 40,
-    "location": "Tennesee Arrington",
     "characterType": "Noble",
     "characterName": "Lady Calphurnia Amiens",
     "imageUrl": "https://2.bp.blogspot.com/-eDGja3kDANk/UIR-jwlyCWI/AAAAAAAAHeo/YmOXueqMyV4/s1600/DSC04647.JPG",
@@ -190,7 +170,6 @@
   "staff22": {
     "name": "Nataniel Gordon",
     "pay": 30,
-    "location": "Tennesee Arrington",
     "characterType": "Jester",
     "characterName": "Tyler Gill",
     "imageUrl": "https://renfair.com/ny/wp-content/uploads/sites/7/2017/06/Richard-Jones-Jester.jpg",
@@ -199,7 +178,6 @@
   "staff23": {
     "name": "Divine Mccaffrey",
     "pay": 25,
-    "location": "Tennesee Arrington",
     "characterType": "Peasant",
     "characterName": "Carla Hart",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0031/9782/9165/products/Custom_Renaissance_Corset_Purple_Dress_Witch_Wench_Costume_2_1200x1200.jpg?v=1563518319",
@@ -208,7 +186,6 @@
   "staff24": {
     "name": "Muhammad Mcconnell",
     "pay": 30,
-    "location": "Tennesee Arrington",
     "characterType": "Peasant",
     "characterName": "Ted Rocha",
     "imageUrl": "https://armstreet.com/catalogue/small/viking-embossed-leather-war-belt-1.jpg",
@@ -217,7 +194,6 @@
   "staff25": {
     "name": "Willard Orozco",
     "pay": 35,
-    "location": "Tennesee Arrington",
     "characterType": "Knight",
     "characterName": " Kieron Cabrera",
     "imageUrl": "https://sc-events.s3.amazonaws.com/4547268/main.jpg",

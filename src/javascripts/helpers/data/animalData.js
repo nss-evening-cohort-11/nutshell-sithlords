@@ -18,9 +18,18 @@ const getAnimals = () => new Promise((resolve, reject) => {
     })
     .catch((err) => reject(err));
 });
+const getSingleAnimal = (animalId) => axios.get(`${baseURL}/animals/${animalId}.json`);
 
 const deleteAnimal = (animalId) => axios.delete(`${baseURL}/animals/${animalId}.json`);
 
 const addAnimal = (newAnimal) => axios.post(`${baseURL}/animals.json`, newAnimal);
 
-export default { getAnimals, addAnimal, deleteAnimal };
+const updateAnimals = (animalId, editedAnimal) => axios.put(`${baseURL}/animals/${animalId}.json`, editedAnimal);
+
+export default {
+  getAnimals,
+  getSingleAnimal,
+  addAnimal,
+  deleteAnimal,
+  updateAnimals,
+};

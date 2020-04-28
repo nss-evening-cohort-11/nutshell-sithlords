@@ -4,9 +4,7 @@
     "description": "Cold and perfectly frothy",
     "imageUrl": "https://images.unsplash.com/photo-1471421298428-1513ab720a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
     "price": 3,
-    "location": "Edinson Tudor Festival",
     "isAvailable": "Available",
-    "quantity": 100,
     "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
   },
   "food2": {
@@ -14,9 +12,7 @@
     "description": "Every cup fresh made to order",
     "imageUrl": "https://images.unsplash.com/photo-1568919722116-90b266c5ccd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
     "price": 2,
-    "location": "Edinson Tudor Festival",
     "isAvailable": "Available",
-    "quantity": 100,
     "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
   },
   "food3": {
@@ -24,9 +20,7 @@
     "description": "Fresh hot and served with powdered sugar",
     "imageUrl": "https://images.unsplash.com/photo-1581618478941-515a55d3fce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
     "price": 6,
-    "location": "Edinson Tudor Festival",
     "isAvailable": "Available",
-    "quantity": 100,
     "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
   },
   "food4": {
@@ -34,218 +28,102 @@
     "description": "Soft, perfectly fried and filled with delicious chocolate, topped with powdered sugar",
     "imageUrl": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
     "price": 8,
-    "location": "Edinson Tudor Festival",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
+    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "food5": {
     "type": "Turkey Leg",
     "description": "Huge, deliciously seasoned meat roasted fresh all day",
     "imageUrl": "https://i.redd.it/k0ncshj5gqgx.jpg",
     "price": 9,
-    "location": "Edinson Tudor Festival",
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "du8GTsVCXqWQb5arAKgSxuZVgvf2"
+    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "food6": {
-    "type": "Beer",
-    "description": "Cold and perfectly frothy",
-    "imageUrl": "https://images.unsplash.com/photo-1471421298428-1513ab720a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
+    "type": "Coffee",
+    "description": "Hot or on ice - it is always the answer",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTso9g7vgtVhvERH_bUAr--Lei2lfznmed-uwQjBQPJ77GylJN9&usqp=CAU0",
     "price": 3,
-    "location": "Hopscote-by-Sea Faire",
     "isAvailable": "Available",
-    "quantity": 100,
     "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
   },
   "food7": {
-    "type": "Lemonade",
-    "description": "Every cup fresh made to order",
-    "imageUrl": "https://images.unsplash.com/photo-1568919722116-90b266c5ccd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": 2,
-    "location": "Hopscote-by-Sea Faire",
+    "type": "BBQ Split",
+    "description": "Scoops of BBQ pulled pork, mac and cheese, and coleslaw served side-by-side with a pickle spear",
+    "imageUrl": "http://stmedia.stimg.co/ctyp+mn+state+fair+bbq+split.png?w=800",
+    "price": 10,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
+    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "food8": {
-    "type": "Funnel Cake",
-    "description": "Fresh hot and served with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1581618478941-515a55d3fce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    "type": "Bananas Foster French Toast",
+    "description": "Cinnamon swirl French toast topped with slices of fresh bananas in an orange-rum-flavored caramel sauce",
+    "imageUrl": "http://stmedia.startribune.com/images/02+Bananas+Foster+French+Toast.jpg",
     "price": 6,
-    "location": "Hopscote-by-Sea Faire",
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
+    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "food9": {
-    "type": "Chocolate Filled Doughnuts",
-    "description": "Soft, perfectly fried and filled with delicious chocolate, topped with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    "price": 8,
-    "location": "Hopscote-by-Sea Faire",
+    "type": "Blueberry Rhubarb Cobbler",
+    "description": "Blueberries and rhubarb topped with a cornmeal biscuit and whipped cream",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+Blueberry+Rhubarb+Cobbler.jpg",
+    "price": 4,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
+    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
   },
   "food10": {
-    "type": "Turkey Leg",
-    "description": "Huge, deliciously seasoned meat roasted fresh all day",
-    "imageUrl": "https://i.redd.it/k0ncshj5gqgx.jpg",
+    "type": "Earth Wings",
+    "description": "Fresh cauliflower pieces dipped in a seasoned batter, deep-fried and smothered in organic sesame BBQ sauce",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+mn+state+fair+earth+wings.png",
     "price": 9,
-    "location": "Hopscote-by-Sea Faire",
     "isAvailable": "Available",
-    "uid": "uOi5vU8B2EdfMDEnS9OAibAcjvE2"
+    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "food11": {
-    "type": "Beer",
-    "description": "Cold and perfectly frothy",
-    "imageUrl": "https://images.unsplash.com/photo-1471421298428-1513ab720a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
-    "price": 4,
-    "location": "North Illinois Pleasure Faire",
+    "type": "Firecracker Shrimp Stuffed Avocado",
+    "description": "Gulf white shrimp tossed with lime, onion, black beans, tomato and fire-roasted corn in a garlic aioli, drizzled with cilantro-infused olive oil, stuffed in avocado halves",
+    "imageUrl": "http://stmedia.startribune.com/images/06+Firecracker+Shrimp+Stuffed+Avocado.jpg",
+    "price": 12,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
+    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "food12": {
-    "type": "Lemonade",
-    "description": "Every cup fresh made to order",
-    "imageUrl": "https://images.unsplash.com/photo-1568919722116-90b266c5ccd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": 3,
-    "location": "North Illinois Pleasure Faire",
+    "type": "Nordic Waffles",
+    "description": "Fresh-made waffle wraps with egg, bacon & cheddar",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+Nordic+Waffles.jpg",
+    "price": 8,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
+    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
   },
   "food13": {
-    "type": "Funnel Cake",
-    "description": "Fresh hot and served with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1581618478941-515a55d3fce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": 7,
-    "location": "North Illinois Pleasure Faire",
+    "type": "Honey Cream Soda Float",
+    "description": "Honey cream soda poured over honey ice cream",
+    "imageUrl": "http://stmedia.startribune.com/images/08+Honey+Cream+Soda+Float.jpg",
+    "price": 3,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
+    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "food14": {
-    "type": "Chocolate Filled Doughnuts",
-    "description": "Soft, perfectly fried and filled with delicious chocolate, topped with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+    "type": "Slider Flights",
+    "description": "Flights of three slider sandwiches, each with a variety of toppings",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+mn+state+fair+Slider+Flights.jpg",
     "price": 8,
-    "location": "North Illinois Pleasure Faire",
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
+    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "food15": {
-    "type": "Turkey Leg",
-    "description": "Huge, deliciously seasoned meat roasted fresh all day",
-    "imageUrl": "https://i.redd.it/k0ncshj5gqgx.jpg",
+    "type": "Swedish Meatball Smörgås (SMORE-gus)",
+    "description": "Meatball sandwich with three traditional Swedish pork and beef meatballs topped with white gravy, lingonberry sauce and dill pickles",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+mn+state+fair+Swedish+Meatball+Smorgas.jpg",
     "price": 11,
-    "location": "North Illinois Pleasure Faire",
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ahDQZ2sCP8bRjRWtTAEPhg2HeZE3"
+    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   },
   "food16": {
-    "type": "Beer",
-    "description": "Cold and perfectly frothy",
-    "imageUrl": "https://images.unsplash.com/photo-1471421298428-1513ab720a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
-    "price": 4,
-    "location": "Tennesee Arrington",
+    "type": "Zesty PB&J Sausage",
+    "description": "Peanut butter, cherry jelly and a hint of cayenne pepper and cilantro blended into a quarter-pound sausage",
+    "imageUrl": "http://stmedia.startribune.com/images/ctyp+Zesty+PBNJ+Sausage.jpg",
+    "price": 9,
     "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
-  },
-  "food17": {
-    "type": "Lemonade",
-    "description": "Every cup fresh made to order",
-    "imageUrl": "https://images.unsplash.com/photo-1568919722116-90b266c5ccd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": 3,
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
-  },
-  "food18": {
-    "type": "Funnel Cake",
-    "description": "Fresh hot and served with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1581618478941-515a55d3fce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": "7",
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
-  },
-  "food19": {
-    "type": "Chocolate Filled Doughnuts",
-    "description": "Soft, perfectly fried and filled with delicious chocolate, topped with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    "price": "8",
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
-  },
-  "food20": {
-    "type": "Turkey Leg",
-    "description": "Huge, deliciously seasoned meat roasted fresh all day",
-    "imageUrl": "https://i.redd.it/k0ncshj5gqgx.jpg",
-    "price": 11,
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "xddqf8S7oLhuj21dqBadWtaYyBE2"
-  },
-  "food21": {
-    "type": "Beer",
-    "description": "Cold and perfectly frothy",
-    "imageUrl": "https://images.unsplash.com/photo-1471421298428-1513ab720a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
-    "price": 4,
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
-  },
-  "food22": {
-    "type": "Lemonade",
-    "description": "Every cup fresh made to order",
-    "imageUrl": "https://images.unsplash.com/photo-1568919722116-90b266c5ccd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": 3,
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
-  },
-  "food23": {
-    "type": "Funnel Cake",
-    "description": "Fresh hot and served with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1581618478941-515a55d3fce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    "price": "7",
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
-  },
-  "food24": {
-    "type": "Chocolate Filled Doughnuts",
-    "description": "Soft, perfectly fried and filled with delicious chocolate, topped with powdered sugar",
-    "imageUrl": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    "price": "8",
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
-    "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
-  },
-  "food25": {
-    "type": "Turkey Leg",
-    "description": "Huge, deliciously seasoned meat roasted fresh all day",
-    "imageUrl": "https://i.redd.it/k0ncshj5gqgx.jpg",
-    "price": 11,
-    "location": "Tennesee Arrington",
-    "isAvailable": "Available",
-    "quantity": 100,
     "uid": "ubyBKtnGqze0FfuFwprJgadImHo1"
   }
 }
