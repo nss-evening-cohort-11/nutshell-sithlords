@@ -189,23 +189,23 @@ const viewSingleEvent = (eventId) => {
       domString += '<button id="closeSingleEvent" class="btn btn-lg closeEventBtn"><i class="fas fa-times"></i> Close event details</button>';
       domString += '</div>';
       domString += '<div id="eventDetails" class="d-flex flex-wrap m-5">';
-      domString += '<div id="eventFoodSection" class="details">';
+      domString += '<div id="eventFoodSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Food Details</h4>';
       domString += eventFoodDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventSouvenirsSection" class="details">';
+      domString += '<div id="eventSouvenirsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Souvenirs Details</h4>';
       domString += eventSouvenirDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventStaffSection" class="details">';
+      domString += '<div id="eventStaffSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Staff Details</h4>';
       domString += eventStaffDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventShowsSection" class="details">';
+      domString += '<div id="eventShowsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Shows Details</h4>';
       domString += eventShowDetails(singleEvent);
       domString += '</div>';
-      domString += '<div id="eventAnimalsSection" class="details">';
+      domString += '<div id="eventAnimalsSection" class="quad details">';
       domString += '<h4 class="eventSectionTitle">Animal Encounter Details</h4>';
       domString += eventAnimalDetails(singleEvent);
       domString += '</div>';
@@ -219,6 +219,7 @@ const viewSingleEvent = (eventId) => {
       $('#staff-collection').addClass('hide');
       $('#shows').addClass('hide');
       $('#events').addClass('hide');
+      $('#animals').addClass('hide');
       $('#single-view-event').removeClass('hide');
     })
     .catch((error) => console.error('problem with single event', error));

@@ -4,7 +4,7 @@ import './food.scss';
 
 const foodDataCardInfo = (food) => {
   let domString = '';
-  domString += '<div class="col-md-4 col-sm-12 mb-2">';
+  domString += '<div class="col-lg-4 col-md-6 mb-2">';
   domString += `<div class="card" id="${food.id}">`;
   domString += `<img src="${food.imageUrl}" class="card-img-top" alt="...">`;
   domString += '<div class="card-body">';
@@ -17,11 +17,11 @@ const foodDataCardInfo = (food) => {
   } else {
     domString += '<p class="card-text">Still cooking and prepping! Please come back later!</p>';
   }
-  domString += '<div class="d-flex justify-content-around">';
+  domString += '<div class="d-flex justify-content-center">';
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editFoodBtn" class="col-5 btn btn-default editFoodBtn"><i class="fas fa-feather-alt"></i> Edit</<button>';
-    domString += '<button id="deleteFoodBtn" class="col-5 btn btn-default deleteFoodBtn"><i class="far fa-trash-alt"></i> Delete</button>';
+    domString += '<button id="editFoodBtn" class="btn btn-default editFoodBtn"><i class="fas fa-feather-alt"></i></<button>';
+    domString += '<button id="deleteFoodBtn" class="btn btn-default deleteFoodBtn"><i class="far fa-trash-alt"></i></button>';
   }
   domString += '</div>';
   domString += '</div>';

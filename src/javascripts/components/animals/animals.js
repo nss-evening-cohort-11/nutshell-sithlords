@@ -47,7 +47,7 @@ const buildAllAnimals = () => {
       domString += '<h3>Unleash the ANIMAL inside you!</h3>';
       const user = firebase.auth().currentUser;
       if (user !== null) {
-        domString += '<button class="btn btn-lg addAnimalBtn" id="addAnimalBtn"><i class="fas fa-plus"></i> Add a new animal ride</button>';
+        domString += '<button class="btn btn-lg addAnimalBtn" id="addAnimalBtn"><i class="fas fa-plus"></i> Add a new animal encounter</button>';
       }
       domString += '</div>';
       domString += '<div class="container-fluid d-flex flex-wrap col-md-9 col-sm-10">';

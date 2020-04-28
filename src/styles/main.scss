@@ -60,6 +60,23 @@ nav {
   @include card-styles;
 }
 
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+}
+
+.styling-columns {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .offset:before {
   content: "";
   height: 70px;

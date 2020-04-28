@@ -5,7 +5,7 @@ import './showCards.scss';
 
 const buildShowCards = (show) => {
   let domString = '';
-  domString += '<div class="col-md-4 col-sm-12 mb-2">';
+  domString += '<div class="col-lg-4 col-md-6 mb-2">';
   domString += `<div class="card" id="${show.id}">`;
   domString += `<img src="${show.imageUrl}" class="card-img-top img-fluid show-images" alt="...">`;
   domString += '<div class="card-body">';
@@ -13,11 +13,13 @@ const buildShowCards = (show) => {
   domString += `<p class="card-text">Time: ${show.time}</p>`;
   domString += `<p class="card-text">Stage: ${show.stage}</p>`;
   domString += `<p class="card-text">Location: ${show.location}</p>`;
+  domString += '<div class="d-flex justify-content-center">';
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button class="col-5 btn m-1 show-edit-btn"><i class="fas fa-feather-alt"></i> <span class="ml-2">Edit</span></button>';
-    domString += '<button class="col-5 btn m-1 show-delete-btn"><i class="far fa-trash-alt"></i> <span class="ml-2">Delete</span></button>';
+    domString += '<button class="btn m-1 btn-default show-edit-btn"><i class="fas fa-feather-alt"></i></button>';
+    domString += '<button class="btn m-1 btn-default show-delete-btn"><i class="far fa-trash-alt"></i></button>';
   }
+  domString += '</div>';
   domString += '</div>';
   domString += '</div>';
   domString += '</div>';
