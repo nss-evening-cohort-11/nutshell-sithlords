@@ -7,6 +7,7 @@ import shows from '../../components/shows/shows';
 import staff from '../../components/staff/staff';
 import animals from '../../components/animals/animals';
 import eventsContainer from '../../components/eventsContainer/eventsContainer';
+import clickEvents from '../../components/eventSingleView/eventSingleView';
 
 const loginButton = $('#loginButton');
 const logoutButton = $('#logoutButton');
@@ -22,8 +23,6 @@ const checkLoginStatus = () => {
       eventsButton.removeClass('hide');
       eventsDiv.removeClass('hide');
       singleViewDiv.removeClass('hide');
-      // events
-      shows.showEvents();
     } else {
       loginButton.removeClass('hide');
       logoutButton.addClass('hide');
@@ -31,17 +30,19 @@ const checkLoginStatus = () => {
       eventsDiv.addClass('hide');
       singleViewDiv.addClass('hide');
     }
+    clickEvents.singleEventClickEvents();
     food.foodEvents();
     food.buildAllFoods();
     animals.animalEvents();
     animals.buildAllAnimals();
-    eventsContainer.buildAllEvents();
-    eventsContainer.eventActions();
     staff.staffEvents();
     staff.buildAllStaff();
     shows.buildAllShows();
+    shows.showEvents();
     souvenirs.souvenirsEvents();
     souvenirs.buildAllSouvenirs();
+    eventsContainer.buildAllEvents();
+    eventsContainer.eventActions();
   });
 };
 

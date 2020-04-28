@@ -86,7 +86,6 @@ const buildAllEvents = () => {
       });
       domString += '</div>';
       utils.printToDom('events', domString);
-      $('body').on('click', '#viewEventBtn', eventSingleView.viewSingleEventCall);
     })
     .catch((error) => console.error('build all events has failed', error));
 };
@@ -97,6 +96,7 @@ const eventActions = () => {
   $('body').on('click', '#editEventBtn', editNewEvent);
   $('body').on('click', '#button-save-event', makeNewEvent);
   $('body').on('click', '#addEventBtn', addEventModal.showEventModalForm);
+  $('body').on('click', '#viewEventBtn', eventSingleView.viewSingleEventCall);
 };
 
 export default { buildAllEvents, eventActions, editNewEvent };

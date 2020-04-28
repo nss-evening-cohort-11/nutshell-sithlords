@@ -213,7 +213,6 @@ const removeEventStaff = () => {
 const viewSingleEvent = (eventId) => {
   smashData.getCompleteEvent(eventId)
     .then((singleEvent) => {
-      console.log('THIS IS A THE INFO', singleEvent);
       let domString = '';
       domString += '<div class="singleEventTitle">';
       domString += `<h2>${singleEvent.name}</h2>`;
@@ -245,17 +244,6 @@ const viewSingleEvent = (eventId) => {
       domString += '</div>';
       domString += '</div>';
       utils.printToDom('single-view-event', domString);
-      $('body').on('click', '#closeSingleEvent', closeSingleEvent);
-      $('body').on('click', '.deleteEventFoodBtn', removeEventFood);
-      $('body').on('click', '.deleteEventStaffBtn', removeEventStaff);
-      $('body').on('click', '.deleteEventShowBtn', removeEventShow);
-      $('#foodCards').addClass('hide');
-      $('#souvenirs').addClass('hide');
-      $('#staff-collection').addClass('hide');
-      $('#shows').addClass('hide');
-      $('#events').addClass('hide');
-      $('#animals').addClass('hide');
-      $('#single-view-event').removeClass('hide');
     })
     .catch((error) => console.error('problem with single event', error));
 };
@@ -265,4 +253,17 @@ const viewSingleEventCall = (e) => {
   viewSingleEvent(eventId);
 };
 
-export default { viewSingleEventCall };
+const singleEventClickEvents = () => {
+  $('body').on('click', '#closeSingleEvent', closeSingleEvent);
+  $('body').on('click', '.deleteEventFoodBtn', removeEventFood);
+  $('body').on('click', '.deleteEventStaffBtn', removeEventStaff);
+  $('body').on('click', '.deleteEventShowBtn', removeEventShow);
+  $('#foodCards').addClass('hide');
+  $('#souvenirs').addClass('hide');
+  $('#staff-collection').addClass('hide');
+  $('#shows').addClass('hide');
+  $('#animals').addClass('hide');
+  $('#single-view-event').removeClass('hide');
+};
+
+export default { viewSingleEventCall, singleEventClickEvents };
