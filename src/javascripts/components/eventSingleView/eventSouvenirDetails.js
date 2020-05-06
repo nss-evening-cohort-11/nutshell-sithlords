@@ -131,7 +131,7 @@ const getEventSouvenirDetails = (singleEvent) => {
   domString += '<div class="input-group-prepend">';
   domString += '<span class="input-group-text">$</span>';
   domString += '</div>';
-  domString += `<input id="souvenirTotalCost" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" readonly value="${singleEvent.souvenirTotalAmount}">`;
+  domString += `<input id="souvTotalCost" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" readonly value="${singleEvent.souvenirTotalAmount}">`;
   domString += '<div class="input-group-append">';
   domString += '<span class="input-group-text">.00</span>';
   domString += '</div>';
