@@ -1,262 +1,210 @@
 {
   "eventStaff1": {
     "eventId": "event1",
-    "staffId": "staff1",
-    "quantity": 10
+    "staffId": "staff1"
   },
   "eventStaff2": {
     "eventId": "event1",
-    "staffId": "staff2",
-    "quantity": 10
+    "staffId": "staff2"
   },
   "eventStaff3": {
     "eventId": "event1",
-    "staffId": "staff3",
-    "quantity": 10
+    "staffId": "staff3"
   },
   "eventStaff4": {
     "eventId": "event2",
-    "staffId": "staff4",
-    "quantity": 10
+    "staffId": "staff4"
   },
   "eventStaff5": {
     "eventId": "event2",
-    "staffId": "staff5",
-    "quantity": 10
+    "staffId": "staff5"
   },
   "eventStaff6": {
     "eventId": "event2",
-    "staffId": "staff6",
-    "quantity": 10
+    "staffId": "staff6"
   },
   "eventStaff7": {
     "eventId": "event3",
-    "staffId": "staff7",
-    "quantity": 10
+    "staffId": "staff7"
   },
   "eventStaff8": {
     "eventId": "event3",
-    "staffId": "staff8",
-    "quantity": 10
+    "staffId": "staff8"
   },
   "eventStaff9": {
     "eventId": "event3",
-    "staffId": "staff9",
-    "quantity": 10
+    "staffId": "staff9"
   },
   "eventStaff10": {
     "eventId": "event4",
-    "staffId": "staff10",
-    "quantity": 10
+    "staffId": "staff10"
   },
   "eventStaff11": {
     "eventId": "event4",
-    "staffId": "staff11",
-    "quantity": 10
+    "staffId": "staff11"
   },
   "eventStaff12": {
     "eventId": "event4",
-    "staffId": "staff12",
-    "quantity": 10
+    "staffId": "staff12"
   },
   "eventStaff13": {
     "eventId": "event3",
-    "staffId": "staff13",
-    "quantity": 10
+    "staffId": "staff13"
   },
   "eventStaff14": {
     "eventId": "event4",
-    "staffId": "staff14",
-    "quantity": 10
+    "staffId": "staff14"
   },
   "eventStaff15": {
     "eventId": "event4",
-    "staffId": "staff15",
-    "quantity": 10
+    "staffId": "staff15"
   },
   "eventStaff16": {
     "eventId": "event4",
-    "staffId": "staff16",
-    "quantity": 10
+    "staffId": "staff16"
   },
   "eventStaff17": {
     "eventId": "event5",
-    "staffId": "staff17",
-    "quantity": 10
+    "staffId": "staff17"
   },
   "eventStaff18": {
     "eventId": "event5",
-    "staffId": "staff18",
-    "quantity": 10
+    "staffId": "staff18"
   },
   "eventStaff19": {
     "eventId": "event5",
-    "staffId": "staff19",
-    "quantity": 10
+    "staffId": "staff19"
   },
   "eventStaff20": {
     "eventId": "event6",
-    "staffId": "staff20",
-    "quantity": 10
+    "staffId": "staff20"
   },
   "eventStaff21": {
     "eventId": "event6",
-    "staffId": "staff21",
-    "quantity": 10
+    "staffId": "staff21"
 
   },"eventStaff22": {
     "eventId": "event6",
-    "staffId": "staff22",
-    "quantity": 10
+    "staffId": "staff22"
   },
   "eventStaff23": {
     "eventId": "event7",
-    "staffId": "staff23",
-    "quantity": 10
+    "staffId": "staff23"
   },
   "eventStaff24": {
     "eventId": "event7",
-    "staffId": "staff24",
-    "quantity": 10
+    "staffId": "staff24"
   },
   "eventStaff25": {
     "eventId": "event7",
-    "staffId": "staff25",
-    "quantity": 10
+    "staffId": "staff25"
   },
   "eventStaff26": {
     "eventId": "event8",
-    "staffId": "staff1",
-    "quantity": 10
+    "staffId": "staff1"
   },
   "eventStaff27": {
     "eventId": "event8",
-    "staffId": "staff5",
-    "quantity": 10
+    "staffId": "staff5"
   },
   "eventStaff28": {
     "eventId": "event8",
-    "staffId": "staff7",
-    "quantity": 10
+    "staffId": "staff7"
   },
   "eventStaff29": {
     "eventId": "event9",
-    "staffId": "staff9",
-    "quantity": 10
+    "staffId": "staff9"
   },
   "eventStaff30": {
     "eventId": "event9",
-    "staffId": "staff11",
-    "quantity": 10
+    "staffId": "staff11"
   },
   "eventStaff31": {
     "eventId": "event9",
-    "staffId": "staff13",
-    "quantity": 10
+    "staffId": "staff13"
   },
   "eventStaff32": {
     "eventId": "event10",
-    "staffId": "staff15",
-    "quantity": 10
+    "staffId": "staff15"
   },
   "eventStaff33": {
     "eventId": "event10",
-    "staffId": "staff17",
-    "quantity": 10
+    "staffId": "staff17"
   },
   "eventStaff34": {
     "eventId": "event10",
-    "staffId": "staff19",
-    "quantity": 10
+    "staffId": "staff19"
   },
   "eventStaff35": {
     "eventId": "event11",
-    "staffId": "staff21",
-    "quantity": 10
+    "staffId": "staff21"
   },
   "eventStaff36": {
     "eventId": "event11",
-    "staffId": "staff23",
-    "quantity": 10
+    "staffId": "staff23"
   },
   "eventStaff37": {
     "eventId": "event11",
-    "staffId": "staff25",
-    "quantity": 10
+    "staffId": "staff25"
   },
   "eventStaff38": {
     "eventId": "event12",
-    "staffId": "staff2",
-    "quantity": 10
+    "staffId": "staff2"
   },
   "eventStaff39": {
     "eventId": "event12",
-    "staffId": "staff4",
-    "quantity": 10
+    "staffId": "staff4"
   },
   "eventStaff40": {
     "eventId": "event12",
-    "staffId": "staff6",
-    "quantity": 10
+    "staffId": "staff6"
   },
   "eventStaff41": {
     "eventId": "event13",
-    "staffId": "staff8",
-    "quantity": 10
+    "staffId": "staff8"
   },
   "eventStaff42": {
     "eventId": "event13",
-    "staffId": "staff10",
-    "quantity": 10
+    "staffId": "staff10"
   },
   "eventStaff43": {
     "eventId": "event13",
-    "staffId": "staff12",
-    "quantity": 10
+    "staffId": "staff12"
   },
   "eventStaff44": {
     "eventId": "event14",
-    "staffId": "staff14",
-    "quantity": 10
+    "staffId": "staff14"
   },
   "eventStaff45": {
     "eventId": "event14",
-    "staffId": "staff16",
-    "quantity": 10
+    "staffId": "staff16"
   },
   "eventStaff46": {
     "eventId": "event14",
-    "staffId": "staff18",
-    "quantity": 10
+    "staffId": "staff18"
   },
   "eventStaff47": {
     "eventId": "event15",
-    "staffId": "staff20",
-    "quantity": 10
+    "staffId": "staff20"
   },
   "eventStaff48": {
     "eventId": "event15",
-    "staffId": "staff22",
-    "quantity": 10
+    "staffId": "staff22"
   },
   "eventStaff49": {
     "eventId": "event15",
-    "staffId": "staff24",
-    "quantity": 10
+    "staffId": "staff24"
   },
   "eventStaff50": {
     "eventId": "event16",
-    "staffId": "staff3",
-    "quantity": 10
+    "staffId": "staff3"
   },
   "eventStaff51": {
     "eventId": "event16",
-    "staffId": "staff6",
-    "quantity": 10
+    "staffId": "staff6"
   },
   "eventStaff52": {
     "eventId": "event16",
-    "staffId": "staff9",
-    "quantity": 10
+    "staffId": "staff9"
   }
 }

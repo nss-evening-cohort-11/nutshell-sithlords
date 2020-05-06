@@ -143,12 +143,27 @@ const getEventStaff = (eventId) => new Promise((resolve, reject) => {
         eventStaff.forEach((eventStaffMember) => {
           const foundEventStaffMember = allStaff.find((x) => x.id === eventStaffMember.staffId);
           foundEventStaffMember.parentEventStaffId = eventStaffMember.id;
-          foundEventStaffMember.parentQuantity = eventStaffMember.quantity;
           foundEventStaffMember.parentEventId = eventStaffMember.eventId;
-          foundEventStaffMember.rowTotal = foundEventStaffMember.parentQuantity * foundEventStaffMember.pay;
           selectedEventStaffMembers.push(foundEventStaffMember);
         });
         resolve(selectedEventStaffMembers);
+      });
+    })
+    .catch((error) => reject(error));
+});
+
+const getStaffNotInEvent = (eventId) => new Promise((resolve, reject) => {
+  eventStaffData.getEventStaffByEventId(eventId)
+    .then((eventStaff) => {
+      staffData.getStaff().then((allStaff) => {
+        const unselectedEventStaffMembers = [];
+        allStaff.forEach((staff) => {
+          const exists = eventStaff.find((x) => staff.id === x.staffId);
+          if (exists === undefined) {
+            unselectedEventStaffMembers.push(staff);
+          }
+        });
+        resolve(unselectedEventStaffMembers);
       });
     })
     .catch((error) => reject(error));
@@ -161,9 +176,7 @@ const getEventStaffTotal = (eventId) => new Promise((resolve, reject) => {
         const rowTotalsArray = [];
         eventStaff.forEach((eventStaffMember) => {
           const foundEventStaffMember = allStaff.find((x) => x.id === eventStaffMember.staffId);
-          foundEventStaffMember.parentQuantity = eventStaffMember.quantity;
-          foundEventStaffMember.rowTotal = foundEventStaffMember.parentQuantity * foundEventStaffMember.pay;
-          rowTotalsArray.push(foundEventStaffMember.rowTotal);
+          rowTotalsArray.push(foundEventStaffMember.pay);
         });
         const staffTotal = rowTotalsArray.reduce((total, num) => total + num, 0);
         resolve(staffTotal);
@@ -266,4 +279,5 @@ export default {
   getEventStaff,
   getAnimalsNotInEvent,
   getShowsNotInEvent,
+  getStaffNotInEvent,
 };

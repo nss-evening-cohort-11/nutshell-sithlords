@@ -91,7 +91,7 @@ const getEventFoodDetails = (singleEvent) => {
   domString += '            <button class="btn btn-outline-secondary add-button my-2" type="button" id="make-new-event-food"><i class="fas fa-plus"></i>Add</button>';
   domString += '          </div>';
   domString += '        </th>';
-
+  domString += '<div id="alertFood" class="alertFood"></div>';
   domString += '        </tr>';
 
   domString += '</thead>';
