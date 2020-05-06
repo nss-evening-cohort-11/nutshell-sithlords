@@ -30,6 +30,8 @@ const getEventSouvenir = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const addEventSouvenir = (newEventSouvenir) => axios.post(`${baseUrl}/eventSouvenir.json`, newEventSouvenir);
+
 const getSingleEventSouvenir = (eventSouvenirId) => axios.get(`${baseUrl}/eventSouvenir/${eventSouvenirId}.json`);
 
 const deleteEventSouvenir = (eventSouvenirId) => axios.delete(`${baseUrl}/eventSouvenir/${eventSouvenirId}.json`);
@@ -39,4 +41,5 @@ export default {
   deleteEventSouvenir,
   getSingleEventSouvenir,
   getEventSouvenir,
+  addEventSouvenir,
 };

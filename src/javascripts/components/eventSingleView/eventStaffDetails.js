@@ -40,7 +40,6 @@ const noSelectedStaff = (eventId) => {
 const getEventStaffDetails = (singleEvent) => {
   let domString = '';
   const staffFound = singleEvent.staff;
-  const eventId = singleEvent.id;
   const user = firebase.auth().currentUser;
   domString += '<div id="eventStaffSection" class="quad col-md-4 col-sm-12">';
   domString += '<h4 class="eventSectionTitle">Staff Details</h4>';
@@ -68,34 +67,32 @@ const getEventStaffDetails = (singleEvent) => {
   domString += '</div>';
   if (staffFound.length !== 0) {
     singleEvent.staff.forEach((staffMember) => {
-      domString += `<tr class="staffRow" id="${eventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
+      if (`${staffMember.pay}` < 101 && `${staffMember.pay}` > 0) {
+        domString += `<tr class="eventFoodItem staffRow from0To100" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      } else if (`${staffMember.pay}` > 100 && `${staffMember.pay}` < 201) {
+        domString += `<tr class="eventFoodItem staffRow from101To200" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      } else if (`${staffMember.pay}` > 200 && `${staffMember.pay}` < 301) {
+        domString += `<tr class="eventFoodItem staffRow from201To300" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      } else if (`${staffMember.pay}` > 300 && `${staffMember.pay}` < 401) {
+        domString += `<tr class="eventFoodItem staffRow from301To400" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      } else if (`${staffMember.pay}` > 400 && `${staffMember.pay}` < 501) {
+        domString += `<tr class="eventFoodItem staffRow from501To500" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      } else if (`${staffMember.pay}` > 500) {
+        domString += `<tr class="eventFoodItem staffRow from501On" data-id="${staffMember.id}" data-parent="${staffMember.parentEventFoodId}" data-container="${staffMember.parentEventId}">`;
+      }
       domString += `<th scope="row" class="cell-width">${staffMember.name}</th>`;
       domString += `<td class="cell-width">${staffMember.characterType}</td>`;
       domString += `<td class="cell-width">$${staffMember.pay}</td>`;
+      printStaffChoices(staffMember);
+      domString += '</div>';
       if (user.uid === singleEvent.uid) {
         domString += `<td class="cell-width"><button id="${staffMember.parentEventStaffId}" value="${staffMember.parentEventStaffId}" class="btn btn-default deleteEventBtn deleteEventStaffBtn"><i class="far fa-trash-alt"></i></button></td>`;
       }
-      printStaffChoices(staffMember);
+      domString += '</tr>';
     });
   } else {
-    noSelectedStaff(eventId);
+    noSelectedStaff(singleEvent);
   }
-  singleEvent.staff.forEach((staffMember) => {
-    if (`${staffMember.pay}` < 101 && `${staffMember.pay}` > 0) {
-      domString += `<tr class="eventStaffMember from0To100" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    } else if (`${staffMember.pay}` > 100 && `${staffMember.pay}` < 201) {
-      domString += `<tr class="eventStaffMember from101To200" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    } else if (`${staffMember.pay}` > 200 && `${staffMember.pay}` < 301) {
-      domString += `<tr class="eventStaffMember from201To300" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    } else if (`${staffMember.pay}` > 300 && `${staffMember.pay}` < 401) {
-      domString += `<tr class="eventStaffMember from301To400" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    } else if (`${staffMember.pay}` > 400 && `${staffMember.pay}` < 501) {
-      domString += `<tr class="eventStaffMember from401To500" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    } else if (`${staffMember.pay}` > 500) {
-      domString += `<tr class="eventStaffMember from501On" id="${staffMember.parentEventId}" data-id="${staffMember.id}" data-parent="${staffMember.parentEventStaffId}" data-container="${staffMember.parentEventId}">`;
-    }
-    domString += '</tr>';
-  });
   domString += '</tbody>';
   domString += '</table>';
   domString += '<div class="input-group mb-3">';
