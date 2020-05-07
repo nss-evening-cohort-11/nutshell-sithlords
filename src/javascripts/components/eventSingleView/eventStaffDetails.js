@@ -8,6 +8,7 @@ import '../../../styles/main.scss';
 
 const printStaffChoices = (event) => {
   const eventId = event.parentEventId;
+  console.log('THIS IS THE EVENT ID', eventId);
   smash.getStaffNotInEvent(eventId)
     .then((staff) => {
       let domString = '';
@@ -39,6 +40,7 @@ const noSelectedStaff = (eventId) => {
 
 const getEventStaffDetails = (singleEvent) => {
   let domString = '';
+  const eventId = singleEvent.id;
   const staffFound = singleEvent.staff;
   const user = firebase.auth().currentUser;
   domString += '<div id="eventStaffSection" class="quad col-md-4 col-sm-12">';
@@ -91,7 +93,7 @@ const getEventStaffDetails = (singleEvent) => {
       domString += '</tr>';
     });
   } else {
-    noSelectedStaff(singleEvent);
+    noSelectedStaff(eventId);
   }
   domString += '</tbody>';
   domString += '</table>';

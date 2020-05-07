@@ -155,6 +155,7 @@ const makeNewEventStaff = (e) => {
       eventId: thisEventId,
       staffId: staff,
     };
+    console.log('this is the eventId', thisEventId);
     eventStaffData.addEventStaff(newEventStaff);
     // eslint-disable-next-line no-use-before-define
     viewSingleEvent(thisEventId);
