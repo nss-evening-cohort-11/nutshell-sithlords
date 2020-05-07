@@ -33,10 +33,10 @@ const noSelectedSouvenirs = (event) => {
   souvenirsData.getSouvenirs()
     .then((souvenirs) => {
       let domString = '';
-      domString += '<select class="custom-select col-11 p-2" id="inputSouvenirChoices">';
+      domString += '<select class="custom-select col-11 p-2 " id="inputSouvChoices">';
       domString += '<option disabled selected>Choose souvenir to add to this event:</option>';
       souvenirs.forEach((souvenir) => {
-        if (souvenirsData.isAvailable === 'Available') {
+        if (souvenir.isAvailable === true) {
           domString += `<option class="souvenirChoice" value="${eventId}" id="${souvenir.id}">${souvenir.type} / $${souvenir.price}</option>`;
         } else {
           domString += `<option class="souvenirChoice" value="${eventId}" id="${souvenir.id}" disabled>${souvenir.type} / $${souvenir.price}</option>`;
@@ -51,6 +51,7 @@ const noSelectedSouvenirs = (event) => {
 const getEventSouvenirDetails = (singleEvent) => {
   const user = firebase.auth().currentUser;
   const souvenirsFound = singleEvent.souvenirs;
+  const eventId = singleEvent.id;
   let domString = '';
   domString += '<div id="eventSouvenirSection" class="quad col-md-4 col-sm-12">';
   domString += '<h4 class="eventSectionTitle">Souvenir Details</h4>';
@@ -120,7 +121,7 @@ const getEventSouvenirDetails = (singleEvent) => {
       domString += '</tr>';
     });
   } else {
-    noSelectedSouvenirs(singleEvent);
+    noSelectedSouvenirs(eventId);
   }
   domString += '</tbody>';
   domString += '</table>';

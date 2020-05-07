@@ -74,6 +74,7 @@ const makeNewEventSouvenir = (e) => {
   const thisEventId = $('#inputSouvChoices option:selected').attr('value');
   const souvId = $('#inputSouvChoices option:selected').attr('id');
   const quantityVal = $('#inputSouvenirQuantity').val() * 1;
+  console.log('quantity', souvId);
   if (souvId !== undefined && quantityVal !== 0) {
     const makeEventSouvenir = {
       eventId: thisEventId,

@@ -31,7 +31,7 @@ const noSelectedAnimals = (eventId) => {
     .then((animals) => {
       let domString = '';
       domString += '<select class="custom-select col-11 p-2" id="inputGroupSelect04">';
-      domString += ' <option disabled>Choose animal to add to event...</option>';
+      domString += ' <option disabled selected>Choose animal to add to event...</option>';
       animals.forEach((animal) => {
         if (animal.isAvailable === 'Available') {
           domString += `<option class="animalChoice" value="${eventNumber}" id="${animal.id}">${animal.name} the ${animal.type} / $${animal.cost}</option>`;
